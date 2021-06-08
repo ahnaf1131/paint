@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js example</title>
+  <style>
+
+    button{
+
+      height: 50px;
+      width: 50px;
+    }
+  
+    label{
+      text-align: end;
+    }
+  </style>
+
+</head>
+
+<body>
+  <main id='hi'>
+    <h1>
+      Color
+    </h1>
+    <label id="colors">
+      <input type="radio" name="color" class="color" onclick="colorF('red')">Red
+      <input type="radio" name="color" class="color"onclick="colorF('green')">Green
+      <input type="radio" name="color" class="color"onclick="colorF('blue')">Blue
+      <input type="radio" name="color" class="color"onclick="colorF('orange')">Orange
+      <input type="radio" name="color" class="color"onclick="colorF('black')">Black
+      <input type="radio" name="color" class="color"onclick="colorF('white')">Eraser
+    </label>
+
+
+  </main>
+
+  <form>
+    <hr><h3>length</h3>
+    <input type="range" min="10"max="100"value="30" id="rangeSlider" >
+    <!--                custom buttons                             -->
+    <button type="radio" name="drawType" class="drawType" onclick="drawFunction('clear')">Clear</button><hr>
+    <!--  <input type="radio" name="drawType" class="drawType" onclick="drawFunction('line')">Line
+    <input type="radio" name="drawType" class="drawType" onclick="drawFunction('')">
+    <input type="radio" name="drawType" class="drawType" onclick="drawFunction('')">
+    <input type="radio" name="drawType" class="drawType" onclick="drawFunction('')">
+    <input type="radio" name="drawType" class="drawType" onclick="drawFunction('')">
+
+  </form>--> 
+  <script src="p5.js"></script>
+  <script src="sketch.js"></script>
+</body>
+ 
+   
+</html>
